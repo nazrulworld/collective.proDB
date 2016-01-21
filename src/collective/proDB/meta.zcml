@@ -1,0 +1,32 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:meta="http://namespaces.zope.org/meta">
+
+    <meta:directives namespace="http://namespaces.zope.org/prodb">
+          <meta:complexDirective
+            name="configuration"
+            schema=".metadirectives.IProDBConfiguration"
+            handler=".metaconfigure.ProDBConfiguration">
+            <meta:subdirective
+              name="database"
+              schema=".metadirectives.IProDBDatabase"
+            />
+            <meta:subdirective
+              name="testing"
+              schema=".metadirectives.IProDBDatabaseTesting"
+            />
+            <meta:subdirective
+              name="advanced"
+              schema=".metadirectives.IProDBDatabaseTesting"
+            />
+            <meta:subdirective
+              name="backup"
+              schema=".metadirectives.IProDBDatabaseBackup"
+            />
+            <meta:subdirective
+              name="replication"
+              schema=".metadirectives.IProDBDatabaseReplication"
+            />
+        </meta:complexDirective>
+    </meta:directives>
+</configure>
