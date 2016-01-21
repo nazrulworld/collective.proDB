@@ -1,6 +1,10 @@
+__pycache__/
+*.py[cod]
+*$py.class
+# C extensions
+*.so
 *.egg-info
 *.mo
-*.pyc
 .installed.cfg
 .mr.developer.cfg
 .project
